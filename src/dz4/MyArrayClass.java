@@ -23,7 +23,8 @@ public class MyArrayClass {
         for (int i = 0; i < this.arr[0].length; i++) {
             for (int j = 0; j < this.arr.length; j++) {
                 if (!this.arr[i][j].matches("[0-9]+")) {
-                    throw new MyArrayDataException("Данные введены некорректно: в массиве содержатся символы, отличне от цифр", arr);
+                    System.out.println();
+                    throw new MyArrayDataException("Данные введены некорректно: в массиве содержатся символы, отличные от цифр, ошибка произошла в элементе [" + i + "][" + j + "]", this.arr);
                 }
                 sum += Integer.parseInt(this.arr[i][j]);
             }

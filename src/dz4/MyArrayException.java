@@ -7,7 +7,7 @@ public class MyArrayException extends Exception{
         return arr;
     }
 
-    public MyArrayException(String message, String[][] arr) {
+    public MyArrayException(String message,String[][] arr) {
         super(message);
         this.arr = arr;
     }
